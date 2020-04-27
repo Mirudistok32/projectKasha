@@ -1,0 +1,47 @@
+.itemPage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 50px;
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: steelblue;
+    padding: 10px;
+    font-size: 2.1vh;
+    border-radius: 4px;
+    box-shadow: inset 0 0 1px 1px #000;
+  }
+  .btnLink {
+    position: absolute;
+    font-size: 23px;
+    border-radius: 4px;
+    background-color: cornflowerblue;
+    padding: 1px 10px;
+    top: 10px;
+    left: 10px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: coral;
+      color: cornsilk;
+    }
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 2px;
+  }
+  .text {
+    padding: 10px;
+    height: 85%;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+}

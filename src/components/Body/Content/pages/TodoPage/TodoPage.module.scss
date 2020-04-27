@@ -1,0 +1,18 @@
+.todoPage {
+  padding: 5px 90px;
+}
+@media (max-width: 800px) {
+  .todoPage {
+    padding: 5px 60px;
+  }
+}
+@media (max-width: 620px) {
+  .todoPage {
+    padding: 5px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .todoPage {
+    padding: 5px 10px;
+  }
+}
