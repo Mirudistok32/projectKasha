@@ -1,0 +1,44 @@
+/* blue rgb(81, 224, 224); */
+/* red rgb(221, 63, 63) */
+.logo {
+  height: 100%;
+  margin: 0 20px;
+  display: flex;
+  &:hover {
+    .m,
+    .k {
+      //   text-shadow: none;
+      text-shadow: -4px 0px 0px cornflowerblue, 4px 0px 0px cornflowerblue,
+        0px 4px 0px cornflowerblue, 0px -4px 0px cornflowerblue;
+      color: #000;
+    }
+  }
+  div {
+    height: inherit;
+    width: inherit;
+    font-family: "Permanent Marker", cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  .m,
+  .k {
+    transition: all 0.3s ease-out;
+    text-shadow: -2px 0 0px #000, 1px 1px 0px #000;
+  }
+  .m {
+    color: rgb(81, 224, 224);
+  }
+  .k {
+    color: rgb(221, 63, 63);
+  }
+}
+@media (max-height: 320px) {
+  .logo {
+    div {
+      font-size: 27px;
+    }
+  }
+}

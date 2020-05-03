@@ -1,5 +1,8 @@
 .nav {
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   ul {
     display: flex;
     height: inherit;
@@ -9,9 +12,10 @@
     }
   }
   .active {
-    box-shadow: inset 0 0 1px 2px coral;
+    box-shadow: inset 0 0 2px 2px coral;
+    background-color: rgb(120, 245, 239);
   }
-  a {
+  li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +49,7 @@
 }
 @media (max-height: 760px) {
   .nav {
-    a {
+    li a {
       height: 60px;
       width: 60px;
       font-size: 12px;
@@ -54,7 +58,7 @@
 }
 @media (max-height: 610px) {
   .nav {
-    a {
+    li a {
       height: 50px;
       width: 50px;
       font-size: 12px;
@@ -63,7 +67,7 @@
 }
 @media (max-height: 610px) {
   .nav {
-    a {
+    li a {
       height: 45px;
       width: 45px;
       font-size: 12px;
@@ -72,7 +76,7 @@
 }
 @media (max-height: 500px) {
   .nav {
-    a {
+    li a {
       height: 41px;
       width: 41px;
       font-size: 12px;
@@ -81,7 +85,7 @@
 }
 @media (max-height: 420px) {
   .nav {
-    a {
+    li a {
       height: 30px;
       width: 40px;
       font-size: 10px;
@@ -90,8 +94,8 @@
 }
 @media (max-height: 320px) {
   .nav {
-    a {
-      height: 30px;
+    li a {
+      height: 25px;
       width: 35px;
       font-size: 10px;
     }
@@ -99,7 +103,7 @@
 }
 @media (max-width: 320px) {
   .nav {
-    a {
+    li a {
       height: 30px;
       width: 35px;
       font-size: 10px;

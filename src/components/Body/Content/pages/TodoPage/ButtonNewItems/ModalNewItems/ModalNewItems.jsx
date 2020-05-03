@@ -4,7 +4,7 @@ import { Formik } from 'formik'
 import * as Yup from 'yup'
 import ErrorModal from './../../../../../../../utils/ErrorModal/ErrorModal'
 
-const ModalNewItems = ({ addNewItemAc, isModalWindowAddItemAc }) => {
+const ModalNewItems = React.memo(({ addNewItemAc, isModalWindowAddItemAc }) => {
 
   const isModalWindowAddItem = (e) => {
     const target = e.target;
@@ -30,7 +30,6 @@ const ModalNewItems = ({ addNewItemAc, isModalWindowAddItemAc }) => {
         initialValues={{ title: "", text: "" }}
         validationSchema={validationSchema}
         onSubmit={(values, { resetForm }) => {
-          console.log(values);
           addNewItemAc(values.title, values.text);
           resetForm();
           isModalWindowAddItemAc();
@@ -64,7 +63,7 @@ const ModalNewItems = ({ addNewItemAc, isModalWindowAddItemAc }) => {
                 />
                 <ErrorModal touched={touched.text} message={errors.text} />
               </div>
-              <button className={`${s.send}`} >Отправить</button>
+              <button className={`${s.send}`} type="submit">Отправить</button>
               <div className={s.close}>X</div>
             </form>
           )
@@ -72,7 +71,7 @@ const ModalNewItems = ({ addNewItemAc, isModalWindowAddItemAc }) => {
       </Formik>
     </div>
   );
-}
+})
 
 export default ModalNewItems;
 

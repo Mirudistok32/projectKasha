@@ -3,7 +3,7 @@ import ModalNewItems from './ModalNewItems'
 import { connect } from 'react-redux'
 import { addNewItemAc, isModalWindowAddItemAc } from './../../../../../../../bll/item-reducer'
 
-class ContainerModalNewItemsNewItems extends React.Component {
+class ContainerModalNewItemsNewItems extends React.PureComponent {
 
   render() {
     return <ModalNewItems {...this.props} />;

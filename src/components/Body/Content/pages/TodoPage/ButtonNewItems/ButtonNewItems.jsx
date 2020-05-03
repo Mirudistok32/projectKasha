@@ -2,7 +2,7 @@ import React from "react";
 import s from "./ButtonNewItems.module.scss";
 import ContainerModalNewItemsNewItems from './ModalNewItems/ContainerModalNewItemsNewItems'
 
-const ButtonNewItems = ({ isModalWindowAddItem, isModalWindowAddItemAc }) => {
+const ButtonNewItems = React.memo(({ isModalWindowAddItem, isModalWindowAddItemAc }) => {
 
   return (<>
     {
@@ -13,6 +13,6 @@ const ButtonNewItems = ({ isModalWindowAddItem, isModalWindowAddItemAc }) => {
     </button>
   </>
   );
-}
+})
 
 export default ButtonNewItems;

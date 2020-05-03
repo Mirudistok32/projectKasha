@@ -3,7 +3,7 @@ import ButtonNewItems from './ButtonNewItems'
 import { connect } from 'react-redux'
 import { isModalWindowAddItemAc } from './../../../../../../bll/item-reducer'
 
-class ContainerButtonNewItems extends React.Component {
+class ContainerButtonNewItems extends React.PureComponent {
 
   render() {
     return <ButtonNewItems

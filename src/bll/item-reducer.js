@@ -1,6 +1,7 @@
 import { todoApi } from "./../api/todoAPI";
 
 const SET_ITEMS = "SET_ITEMS";
+const SET_ITEM = "SET_ITEM";
 const SET_DONE = "SET_DONE";
 const SET_IMPORTANT = "SET_IMPORTANT";
 const SET_DELETE_ITEM = "SET_DELETE_ITEM";
@@ -13,6 +14,7 @@ const SET_MAIN_TITLE = "SET_MAIN_TITLE";
 const initialState = {
   mainTitle: "Mirudistok App",
   items: [],
+  item: { title: "", text: "" },
   itemsLength: null,
   isModalWindowAddItem: false,
   searchLabel: "",
@@ -34,6 +36,13 @@ const itemReducer = (state = initialState, action) => {
         ...state,
         items: action.items,
         itemsLength: action.items.length,
+      };
+    }
+    case SET_ITEM: {
+      const item = state.items.find((i) => i.id === +action.id);
+      return {
+        ...state,
+        item: { ...item },
       };
     }
     case SET_DONE: {
@@ -108,6 +117,13 @@ const setItemsAC = (items) => {
   return {
     type: SET_ITEMS,
     items,
+  };
+};
+
+export const setItemAc = (id) => {
+  return {
+    type: SET_ITEM,
+    id,
   };
 };
 

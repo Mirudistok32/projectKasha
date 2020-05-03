@@ -7,7 +7,7 @@ const Item = ({ title, done, id, important, setImportant, setDone, setDeleteItem
   const doneSymbol = done ? 'v' : '';
 
   return (
-    <div className={`${s.item} ${done && s.itemDoneActive}`}>
+    <div className={`${s.item} ${done && s.itemDoneActive}`} >
       <button className={`${s.done} ${done && s.doneActive}`}
         onClick={() => setDone(id)}
         title="Завершено/Незавершено"

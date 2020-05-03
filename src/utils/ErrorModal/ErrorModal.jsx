@@ -9,7 +9,7 @@ const ErrorModal = (props) => {
         return <div className={`${s.errorModal} ${s.invalid}`}>({props.message})</div>
     }
 
-    return <div className={`${s.errorModal} ${s.valid}`}>+</div>
+    return <div className={`${s.errorModal} ${s.valid}`}></div>
 }
 
 export default ErrorModal;

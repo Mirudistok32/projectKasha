@@ -1,40 +1,33 @@
 import React from "react";
 import ItemPage from './ItemPage';
-import { } from './../../../../../../../bll/item-reducer'
+import { setItemAc } from './../../../../../../../bll/item-reducer'
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 
 class ContainerItemPage extends React.Component {
 
-  state = {
-    title: "Ничего не работает",
-    text: "Текст тоже не работает"
-  }
 
   componentDidMount() {
-    // const { match, items } = this.props;
-    // const item = items.find(i => i.id === +match.params.id)
-    // this.setState(() => {
-    //   return {
-    //     title: item.title,
-    //     text: item.text
-    //   }
-    // })
+    const { setItemAc, match } = this.props;
+    setItemAc(match.params.id);
   }
 
   render() {
-    return <ItemPage title={this.state.title} text={this.state.text} />
+    console.log("ContainerItemPage");
+    const { item } = this.props
+    return <ItemPage title={item.title} text={item.text} />
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-    items: state.itemReducer.items
+    item: state.itemReducer.item
   }
 }
 
 const mapDispatchToProps = ({
+  setItemAc
 })
 
 export default compose(

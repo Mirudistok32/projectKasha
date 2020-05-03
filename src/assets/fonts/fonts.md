@@ -7,3 +7,4 @@ font-family: 'Roboto Mono', monospace;
 font-family: 'Roboto Slab', serif;
 font-family: 'Ubuntu', sans-serif;
 font-family: 'Nunito', sans-serif;
+font-family: 'Permanent Marker', cursive; //logo

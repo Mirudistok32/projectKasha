@@ -1,0 +1,128 @@
+.home {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+  }
+  .container {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+    max-width: 500px;
+    text-align: center;
+  }
+  .title {
+    padding: 5px;
+    font-family: "Permanent Marker", cursive;
+    letter-spacing: 2px;
+    font-size: 43px;
+    margin: 15px 0;
+  }
+  h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px 0;
+    span {
+      font-weight: 700;
+    }
+  }
+  .security {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    margin-bottom: 60px;
+    .securityLeft,
+    .securityRight {
+      font-size: 104px;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      color: slateblue;
+      &:hover {
+        // color: rgb(221, 63, 63);
+        text-shadow: -3px 0 0 rgb(221, 63, 63), 0px -3px 0 rgb(221, 63, 63);
+      }
+    }
+    .securityLeft {
+      &::before {
+        content: "\f125";
+        font-family: "Flaticon";
+      }
+    }
+    .securityRight {
+      &::before {
+        content: "\f11e";
+        font-family: "Flaticon";
+      }
+    }
+  }
+  .footer {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: slategray;
+    box-shadow: inset 0 0 0px 2px #000;
+    a {
+      color: #fff;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        opacity: 60%;
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    h5{
+      margin-bottom: 30px;
+    }
+    .security {
+      justify-content: center;
+      margin-bottom: 80px;
+      .securityLeft,
+      .securityRight {
+        font-size: 84px;
+      }
+      h2 {
+        margin: 0 3px;
+      }
+    }
+  }
+  @media (max-width: 450px) {
+    .security {
+      margin-bottom: 50px;
+      .securityLeft,
+      .securityRight {
+        font-size: 60px;
+      }
+      h2 {
+        margin: 0 3px;
+        font-size: 18px;
+      }
+    }
+  }
+  @media (max-width: 330px) {
+    .security {
+      margin-bottom: 40px;
+      .securityLeft,
+      .securityRight {
+        font-size: 40px;
+      }
+      h2 {
+        margin: 0 3px;
+        font-size: 18px;
+      }
+    }
+  }
+}

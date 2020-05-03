@@ -1,0 +1,81 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 27/02/2018 09:20
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-001-robot-49:before { content: "\f100"; }
+.flaticon-002-robot-48:before { content: "\f101"; }
+.flaticon-003-robot-47:before { content: "\f102"; }
+.flaticon-004-robot-46:before { content: "\f103"; }
+.flaticon-005-robot-45:before { content: "\f104"; }
+.flaticon-006-robot-44:before { content: "\f105"; }
+.flaticon-007-robot-43:before { content: "\f106"; }
+.flaticon-008-robot-42:before { content: "\f107"; }
+.flaticon-009-robot-41:before { content: "\f108"; }
+.flaticon-010-robot-40:before { content: "\f109"; }
+.flaticon-011-robot-39:before { content: "\f10a"; }
+.flaticon-012-robot-38:before { content: "\f10b"; }
+.flaticon-013-robot-37:before { content: "\f10c"; }
+.flaticon-014-robot-36:before { content: "\f10d"; }
+.flaticon-015-robot-35:before { content: "\f10e"; }
+.flaticon-016-robot-34:before { content: "\f10f"; }
+.flaticon-017-robot-33:before { content: "\f110"; }
+.flaticon-018-robot-32:before { content: "\f111"; }
+.flaticon-019-robot-31:before { content: "\f112"; }
+.flaticon-020-robot-30:before { content: "\f113"; }
+.flaticon-021-robot-29:before { content: "\f114"; }
+.flaticon-022-robot-28:before { content: "\f115"; }
+.flaticon-023-robot-27:before { content: "\f116"; }
+.flaticon-024-robot-26:before { content: "\f117"; }
+.flaticon-025-robot-25:before { content: "\f118"; }
+.flaticon-026-robot-24:before { content: "\f119"; }
+.flaticon-027-robot-23:before { content: "\f11a"; }
+.flaticon-028-robot-22:before { content: "\f11b"; }
+.flaticon-029-robot-21:before { content: "\f11c"; }
+.flaticon-030-robot-20:before { content: "\f11d"; }
+.flaticon-031-robot-19:before { content: "\f11e"; }
+.flaticon-032-robot-18:before { content: "\f11f"; }
+.flaticon-033-robot-17:before { content: "\f120"; }
+.flaticon-034-robot-16:before { content: "\f121"; }
+.flaticon-035-robot-15:before { content: "\f122"; }
+.flaticon-036-robot-14:before { content: "\f123"; }
+.flaticon-037-robot-13:before { content: "\f124"; }
+.flaticon-038-robot-12:before { content: "\f125"; }
+.flaticon-039-robot-11:before { content: "\f126"; }
+.flaticon-040-robot-10:before { content: "\f127"; }
+.flaticon-041-robot-9:before { content: "\f128"; }
+.flaticon-042-robot-8:before { content: "\f129"; }
+.flaticon-043-robot-7:before { content: "\f12a"; }
+.flaticon-044-robot-6:before { content: "\f12b"; }
+.flaticon-045-robot-5:before { content: "\f12c"; }
+.flaticon-046-robot-4:before { content: "\f12d"; }
+.flaticon-047-robot-3:before { content: "\f12e"; }
+.flaticon-048-robot-2:before { content: "\f12f"; }
+.flaticon-049-robot-1:before { content: "\f130"; }
+.flaticon-050-robot:before { content: "\f131"; }
