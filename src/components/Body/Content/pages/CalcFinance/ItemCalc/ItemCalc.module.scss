@@ -7,6 +7,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    &:hover{
+        .closeVisible{
+            transition: all 0.21s ease-in-out;
+            height: 15px;
+            box-shadow: 0 0 5px 1px #fff;
+        }
+    }
+    .close{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        font-size: 11px;
+        top: 5px;
+        right: 5px;
+        border-radius: 50%;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .closeVisible{
+        height: 0;
+        overflow: hidden;
+    }
 }
 .red{
     background-color: rgb(228, 91, 91);

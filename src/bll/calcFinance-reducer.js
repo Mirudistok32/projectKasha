@@ -4,6 +4,7 @@ const SET_CALC_ITEMS = "SET_CALC_ITEMS";
 const SET_FILTER = "SET_FILTER";
 const SET_NEW_CALC_ITEM = "SET_NEW_CALC_ITEM";
 const SET_NEW_SETTING = "SET_NEW_SETTING";
+const DELETE_ITEM = "DELETE_ITEM";
 
 const initialState = {
   items: [],
@@ -39,6 +40,7 @@ const calcFinanceReducer = (state = initialState, action) => {
         filter: action.filter,
       };
     }
+
     case SET_NEW_CALC_ITEM: {
       const newItem = {
         id: Date.now().toString(),
@@ -62,6 +64,18 @@ const calcFinanceReducer = (state = initialState, action) => {
         total: +action.number,
         income: 0,
         expenses: 0,
+      };
+    }
+    case DELETE_ITEM: {
+      const { number } = state.items.find((i) => i.id === action.id);
+
+      return {
+        ...state,
+        items: state.items.filter((i) => i.id !== action.id),
+        total: state.total - +number,
+        income: number >= 0 ? state.income - +number : state.income,
+        expenses: number < 0 ? state.expenses - +number : state.expenses
+
       };
     }
     default: {
@@ -96,6 +110,13 @@ export const setNewSettingsAC = (number) => {
   return {
     type: SET_NEW_SETTING,
     number,
+  };
+};
+
+export const deleteItemAC = (id) => {
+  return {
+    type: DELETE_ITEM,
+    id,
   };
 };
 

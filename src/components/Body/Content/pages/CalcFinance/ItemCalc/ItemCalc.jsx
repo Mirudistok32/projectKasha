@@ -2,7 +2,7 @@ import React from 'react'
 import s from './ItemCalc.module.scss'
 import cn from 'classnames'
 
-const ItemCalc = ({ text, number }) => {
+const ItemCalc = ({ text, number, deleteItem }) => {
 
 
     return (
@@ -16,6 +16,7 @@ const ItemCalc = ({ text, number }) => {
         }>
             <div className={s.text}>{text}</div>
             <div className={s.number}>{number}</div>
+            <span className={cn(s.close, s.closeVisible)} onClick={deleteItem}>x</span>
         </div>
     )
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import s from './CalcFinance.module.scss'
 import { connect } from 'react-redux'
 import { setmainTitleAc } from './../../../../../bll/item-reducer'
-import { setFilterAC, setNewCalcItemAc, setNewSettingsAC } from './../../../../../bll/calcFinance-reducer'
+import { setFilterAC, setNewCalcItemAc, setNewSettingsAC, deleteItemAC } from './../../../../../bll/calcFinance-reducer'
 import cn from 'classnames'
 import ItemCalc from './ItemCalc/ItemCalc'
 import CalcFinanceFilter from './CalcFinanceFilter/CalcFinanceFilter'
@@ -19,7 +19,8 @@ const CalcFinance = ({
     income,
     expenses,
     items,
-    filter }) => {
+    filter,
+    deleteItemAC }) => {
 
     const [isVisible, setIsVisible] = useState(true)
 
@@ -43,10 +44,10 @@ const CalcFinance = ({
         }
     }
 
-    const localStor = (arr) => {
-        localStorage.setItem('calcFinanceData', JSON.stringify(arr))
-        return JSON.parse(localStorage.getItem('calcFinanceData'));
-    }
+    // const localStor = (arr) => {
+    //     localStorage.setItem('calcFinanceData', JSON.stringify(arr))
+    //     return JSON.parse(localStorage.getItem('calcFinanceData'));
+    // }
 
     return (
         <section className={s.calcFinance}>
@@ -57,7 +58,11 @@ const CalcFinance = ({
                 <h3>История рассходов</h3>
                 <section className={s.list}>
                     {
-                        localStor(filterItems(items, filter)).map(i => <ItemCalc key={i.text} text={i.text} number={i.number} />)
+                        filterItems(items, filter).map(i => <ItemCalc
+                            key={i.id}
+                            text={i.text}
+                            number={i.number}
+                            deleteItem={() => deleteItemAC(i.id)} />)
                     }
                 </section>
                 <BoxAddArticleItem setIsVisible={setIsVisible} isVisible={isVisible} setNewCalcItemAc={setNewCalcItemAc} />
@@ -81,5 +86,6 @@ export default connect(mapStateToProps, {
     setmainTitleAc,
     setFilterAC,
     setNewCalcItemAc,
-    setNewSettingsAC
+    setNewSettingsAC,
+    deleteItemAC
 })(CalcFinance)
