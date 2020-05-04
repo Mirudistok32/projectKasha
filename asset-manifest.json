@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/projectKasha/static/css/main.91a02ab6.chunk.css",
-    "main.js": "/projectKasha/static/js/main.6b8d9196.chunk.js",
-    "main.js.map": "/projectKasha/static/js/main.6b8d9196.chunk.js.map",
+    "main.css": "/projectKasha/static/css/main.458bd0c4.chunk.css",
+    "main.js": "/projectKasha/static/js/main.55ba46c2.chunk.js",
+    "main.js.map": "/projectKasha/static/js/main.55ba46c2.chunk.js.map",
     "runtime-main.js": "/projectKasha/static/js/runtime-main.66fe67de.js",
     "runtime-main.js.map": "/projectKasha/static/js/runtime-main.66fe67de.js.map",
     "static/css/2.91e920df.chunk.css": "/projectKasha/static/css/2.91e920df.chunk.css",
-    "static/js/2.022c4587.chunk.js": "/projectKasha/static/js/2.022c4587.chunk.js",
-    "static/js/2.022c4587.chunk.js.map": "/projectKasha/static/js/2.022c4587.chunk.js.map",
+    "static/js/2.bc94bc26.chunk.js": "/projectKasha/static/js/2.bc94bc26.chunk.js",
+    "static/js/2.bc94bc26.chunk.js.map": "/projectKasha/static/js/2.bc94bc26.chunk.js.map",
     "index.html": "/projectKasha/index.html",
-    "precache-manifest.69bc79f5532d3ba0d9c4141d4e5e62f3.js": "/projectKasha/precache-manifest.69bc79f5532d3ba0d9c4141d4e5e62f3.js",
+    "precache-manifest.9bfc2da27e9deee34ede94d358814683.js": "/projectKasha/precache-manifest.9bfc2da27e9deee34ede94d358814683.js",
     "service-worker.js": "/projectKasha/service-worker.js",
     "static/css/2.91e920df.chunk.css.map": "/projectKasha/static/css/2.91e920df.chunk.css.map",
-    "static/css/main.91a02ab6.chunk.css.map": "/projectKasha/static/css/main.91a02ab6.chunk.css.map",
-    "static/js/2.022c4587.chunk.js.LICENSE.txt": "/projectKasha/static/js/2.022c4587.chunk.js.LICENSE.txt",
+    "static/css/main.458bd0c4.chunk.css.map": "/projectKasha/static/css/main.458bd0c4.chunk.css.map",
+    "static/js/2.bc94bc26.chunk.js.LICENSE.txt": "/projectKasha/static/js/2.bc94bc26.chunk.js.LICENSE.txt",
     "static/media/flaticon.css": "/projectKasha/static/media/Flaticon.e9a4de22.ttf",
     "static/media/index.css": "/projectKasha/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.66fe67de.js",
     "static/css/2.91e920df.chunk.css",
-    "static/js/2.022c4587.chunk.js",
-    "static/css/main.91a02ab6.chunk.css",
-    "static/js/main.6b8d9196.chunk.js"
+    "static/js/2.bc94bc26.chunk.js",
+    "static/css/main.458bd0c4.chunk.css",
+    "static/js/main.55ba46c2.chunk.js"
   ]
 }

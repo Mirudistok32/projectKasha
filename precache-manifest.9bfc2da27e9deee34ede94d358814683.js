@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "229addc4631b50aaa865159f01394c6b",
+    "revision": "e2d594b3e7e9e0e2ee38baf0515c2500",
     "url": "/projectKasha/index.html"
   },
   {
-    "revision": "2fafe2b4e9bf6345c4c2",
+    "revision": "4cf2838293c05a73743d",
     "url": "/projectKasha/static/css/2.91e920df.chunk.css"
   },
   {
-    "revision": "1015bac5fd14b4fe203c",
-    "url": "/projectKasha/static/css/main.91a02ab6.chunk.css"
+    "revision": "30c744b82562584b3d0c",
+    "url": "/projectKasha/static/css/main.458bd0c4.chunk.css"
   },
   {
-    "revision": "2fafe2b4e9bf6345c4c2",
-    "url": "/projectKasha/static/js/2.022c4587.chunk.js"
+    "revision": "4cf2838293c05a73743d",
+    "url": "/projectKasha/static/js/2.bc94bc26.chunk.js"
   },
   {
     "revision": "cacaf3f01dd3bd8237006f7c58951c1c",
-    "url": "/projectKasha/static/js/2.022c4587.chunk.js.LICENSE.txt"
+    "url": "/projectKasha/static/js/2.bc94bc26.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1015bac5fd14b4fe203c",
-    "url": "/projectKasha/static/js/main.6b8d9196.chunk.js"
+    "revision": "30c744b82562584b3d0c",
+    "url": "/projectKasha/static/js/main.55ba46c2.chunk.js"
   },
   {
     "revision": "8b83123b6d946788b3fe",
