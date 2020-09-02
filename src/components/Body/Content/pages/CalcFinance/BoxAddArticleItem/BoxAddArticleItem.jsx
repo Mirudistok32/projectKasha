@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import s from './BoxAddArticleItem.module.scss'
 import cn from 'classnames'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
 import ErrorModal from './../../../../../../utils/ErrorModal/ErrorModal'
 
-const BoxAddArticleItem = ({ isVisible, setIsVisible, setNewCalcItemAc }) => {
+const BoxAddArticleItem = React.memo(({ isVisible, setIsVisible, setNewCalcItemAc }) => {
 
 
     const validationSchema = Yup.object().shape({
@@ -54,12 +54,11 @@ const BoxAddArticleItem = ({ isVisible, setIsVisible, setNewCalcItemAc }) => {
                                 <input
                                     name="number"
                                     id="number"
-                                    className={s.input}
+                                    className={s.input + ' ' + touched.number && errors.number ? s.error : ''}
                                     placeholder="Введите сумму"
                                     value={values.number}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
-                                    className={cn({ [s.error]: touched.number && errors.number })}
                                 />
                                 <ErrorModal touched={touched.number} message={errors.number} />
                             </div>
@@ -73,6 +72,6 @@ const BoxAddArticleItem = ({ isVisible, setIsVisible, setNewCalcItemAc }) => {
             }
         </Formik>
     )
-}
+})
 
 export default BoxAddArticleItem

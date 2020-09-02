@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Finance.module.scss'
 
-const Finance = ({ total, income, expenses }) => {
+const Finance = React.memo(({ total, income, expenses }) => {
     return (
         <div className={s.finance}>
             <div className={s.total}>Ваш капитал:<span>{total}</span></div>
@@ -11,6 +11,6 @@ const Finance = ({ total, income, expenses }) => {
             </div>
         </div>
     )
-}
+})
 
 export default Finance

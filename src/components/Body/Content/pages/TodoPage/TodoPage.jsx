@@ -4,7 +4,7 @@ import ContainerSearch from './Search/ContainerSearch'
 import ContainerItems from './Items/ContainerItems'
 import ContainerButtonNewItems from './ButtonNewItems/ContainerButtonNewItems'
 
-const TodoPage = () => {
+const TodoPage = React.memo(() => {
   return (
     <section className={s.todoPage}>
       <ContainerSearch />
@@ -12,6 +12,6 @@ const TodoPage = () => {
       <ContainerButtonNewItems />
     </section>
   );
-}
+})
 
 export default TodoPage;

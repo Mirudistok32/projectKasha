@@ -3,7 +3,7 @@ import s from './CalcFinanceFilter.module.scss'
 import cn from 'classnames'
 import ModalFinance from './../../../../../../utils/ModalFinance/ModalFinance'
 
-const CalcFinanceFilter = ({ setFilterAC, filter, setNewSettingsAC }) => {
+const CalcFinanceFilter = React.memo(({ setFilterAC, filter, setNewSettingsAC }) => {
 
     const [isViseble, setIsVisible] = useState(false);
 
@@ -38,6 +38,6 @@ const CalcFinanceFilter = ({ setFilterAC, filter, setNewSettingsAC }) => {
             </ul>
         </>
     )
-}
+})
 
 export default CalcFinanceFilter

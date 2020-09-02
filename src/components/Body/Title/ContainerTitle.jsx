@@ -2,7 +2,7 @@ import React from "react";
 import Title from './Title'
 import { connect } from 'react-redux'
 
-class ContainerTitle extends React.Component {
+class ContainerTitle extends React.PureComponent {
 
   render() {
     const { mainTitle } = this.props;

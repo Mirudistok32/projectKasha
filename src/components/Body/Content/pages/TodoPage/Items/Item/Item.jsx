@@ -2,7 +2,7 @@ import React from "react";
 import s from "./Item.module.scss";
 import { NavLink } from "react-router-dom";
 
-const Item = ({ title, done, id, important, setImportant, setDone, setDeleteItem }) => {
+const Item = React.memo(({ title, done, id, important, setImportant, setDone, setDeleteItem }) => {
 
   const doneSymbol = done ? 'v' : '';
 
@@ -25,6 +25,6 @@ const Item = ({ title, done, id, important, setImportant, setDone, setDeleteItem
         title="Удалить">X</button>
     </div>
   );
-}
+})
 
 export default Item;

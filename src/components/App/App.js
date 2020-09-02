@@ -7,25 +7,27 @@ import { setAphorismsThunkCreator } from "./../../bll/aphorisms-reducer";
 import { setCalcItemsThunkCreator } from "./../../bll/calcFinance-reducer";
 import { connect } from "react-redux";
 
-const App = ({ setAphorismsThunkCreator, setCalcItemsThunkCreator }) => {
-  useEffect(() => {
-    setAphorismsThunkCreator();
-    setCalcItemsThunkCreator();
-  }, [setAphorismsThunkCreator, setCalcItemsThunkCreator]);
+const App = React.memo(
+  ({ setAphorismsThunkCreator, setCalcItemsThunkCreator }) => {
+    useEffect(() => {
+      setAphorismsThunkCreator();
+      setCalcItemsThunkCreator();
+    }, [setAphorismsThunkCreator, setCalcItemsThunkCreator]);
 
-  return (
-    <ErrorBoundry>
-      <section className={s.app}>
-        <header className={s.header}>
-          <Header />
-        </header>
-        <section className={s.body}>
-          <Body />
+    return (
+      <ErrorBoundry>
+        <section className={s.app}>
+          <header className={s.header}>
+            <Header />
+          </header>
+          <section className={s.body}>
+            <Body />
+          </section>
         </section>
-      </section>
-    </ErrorBoundry>
-  );
-};
+      </ErrorBoundry>
+    );
+  }
+);
 
 const mapStateToProps = (state) => {
   return {};

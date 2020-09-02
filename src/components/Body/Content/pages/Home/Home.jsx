@@ -5,12 +5,12 @@ import s from './Home.module.scss'
 import './../../../../../assets/fonts/robot/flaticon.css'
 import SliderSlick from './SliderSlick/SliderSlick'
 
-const Home = ({ setmainTitleAc }) => {
+const Home = React.memo(({ setmainTitleAc }) => {
 
     useEffect(() => {
         setmainTitleAc('Project Kasha App');
 
-    }, [])
+    }, [setmainTitleAc])
 
     return (
         <section className={s.home} >
@@ -30,12 +30,12 @@ const Home = ({ setmainTitleAc }) => {
                     <SliderSlick />
                 </div>
                 <footer className={s.footer}>
-                    <a href="https://github.com/Mirudistok32" target="_blank">by Stanislav Postnikov</a>
+                    <a href="https://github.com/Mirudistok32" target="_blank" rel="noopener noreferrer">by Stanislav Postnikov</a>
                 </footer>
             </div>
         </section>
     )
-}
+})
 
 const mapStateToProps = (state) => {
     return {

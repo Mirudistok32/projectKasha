@@ -3,7 +3,7 @@ import Content from './Content'
 import { connect } from "react-redux";
 import { todoListThunkCreator } from './../../../bll/item-reducer'
 
-class ContainerContent extends React.Component {
+class ContainerContent extends React.PureComponent {
 
   componentDidMount() {
     this.props.todoListThunkCreator();

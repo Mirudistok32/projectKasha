@@ -2,7 +2,7 @@ import React from 'react'
 import s from './ItemCalc.module.scss'
 import cn from 'classnames'
 
-const ItemCalc = ({ text, number, deleteItem }) => {
+const ItemCalc = React.memo(({ text, number, deleteItem }) => {
 
 
     return (
@@ -19,6 +19,6 @@ const ItemCalc = ({ text, number, deleteItem }) => {
             <span className={cn(s.close, s.closeVisible)} onClick={deleteItem}>x</span>
         </div>
     )
-}
+})
 
 export default ItemCalc

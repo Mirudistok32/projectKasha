@@ -3,7 +3,7 @@ import s from './DialogsPage.module.scss'
 import { setmainTitleAc } from './../../../../../bll/item-reducer'
 import { connect } from 'react-redux'
 
-const DialogsPage = ({ setmainTitleAc }) => {
+const DialogsPage = React.memo(({ setmainTitleAc }) => {
 
 
     return (
@@ -15,7 +15,7 @@ const DialogsPage = ({ setmainTitleAc }) => {
             />
         </div>
     )
-}
+})
 
 
 const mapStateToProps = (state) => ({

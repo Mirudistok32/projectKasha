@@ -12,7 +12,7 @@ const DialogsPage = React.lazy(() => import('./pages/DialogsPage/DialogsPage'));
 const CalcFinance = React.lazy(() => import('./pages/CalcFinance/CalcFinance'));
 const ContainerItemPage = React.lazy(() => import('./pages/TodoPage//Items/ItemPage/ContainerItemPage'));
 
-const Content = () => {
+const Content = React.memo(() => {
   return (
     <section className={s.content}>
       <Switch>
@@ -40,6 +40,6 @@ const Content = () => {
       </Switch>
     </section>
   );
-}
+})
 
 export default Content;

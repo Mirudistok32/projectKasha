@@ -3,7 +3,7 @@ import Slider from 'react-slick'
 import s from './SliderSlick.module.scss'
 import { connect } from 'react-redux'
 
-const SliderSlick = ({ aphorisms }) => {
+const SliderSlick = React.memo(({ aphorisms }) => {
 
 
     const settings = {
@@ -26,7 +26,7 @@ const SliderSlick = ({ aphorisms }) => {
             </Slider>
         </div>
     )
-}
+})
 
 const mapStateToProps = (state) => {
     return {

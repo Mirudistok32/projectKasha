@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import s from './Logo.module.scss'
 import cn from 'classnames'
 import { connect } from 'react-redux'
 
-const Logo = () => {
+const Logo = React.memo(() => {
 
     return (
         <NavLink to="/" className={s.logo} title="Mirudistok">
@@ -15,7 +15,7 @@ const Logo = () => {
         </NavLink>
 
     )
-}
+})
 
 const mapStateToProps = (state) => {
     return {}

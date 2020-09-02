@@ -3,7 +3,9 @@ import s from './Header.module.scss'
 import ErrorBoundry from "../../utils/ErrorBoundry/ErrorBoundry";
 import { NavLink } from 'react-router-dom'
 import Logo from './Logo/Logo'
-class Header extends React.Component {
+
+
+class Header extends React.PureComponent {
   render() {
     return (
       <ErrorBoundry>
