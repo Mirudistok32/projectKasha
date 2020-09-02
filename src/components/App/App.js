@@ -11,7 +11,7 @@ const App = ({ setAphorismsThunkCreator, setCalcItemsThunkCreator }) => {
   useEffect(() => {
     setAphorismsThunkCreator();
     setCalcItemsThunkCreator();
-  }, []);
+  }, [setAphorismsThunkCreator, setCalcItemsThunkCreator]);
 
   return (
     <ErrorBoundry>
