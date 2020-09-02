@@ -13,6 +13,7 @@ class Header extends React.Component {
             <ul>
               <li><NavLink to="/todo" activeClassName={s.active}  title="Список дел">Todo</NavLink></li>
               <li><NavLink to="/calculate" activeClassName={s.active} className={s.calc} title="Калькулятор бюджета">CalcF</NavLink></li>
+              <li><NavLink to="/dialogs" activeClassName={s.active} className={s.calc} title="Простое сообщение">Inc</NavLink></li>
             </ul>
           </nav>
         </>
